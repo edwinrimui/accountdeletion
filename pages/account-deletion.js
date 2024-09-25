@@ -12,7 +12,7 @@ export default function AccountDeletion() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/delete-account', {
+      const response = await fetch('/clients/deleterequest/api/delete-account', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
